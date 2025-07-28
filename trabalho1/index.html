@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Currículo</title>
+  <meta name="description" content="Currículo">
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #2c3e50;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .esquerda {
+      width: 30%;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      overflow-y: auto;
+    }
+
+    .direita {
+      width: 70%;
+      background-color: #f9f9f9;
+      padding: 30px;
+      color: #333;
+      overflow-y: auto;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
+
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .info-item {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .icon {
+      width: 16px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#foto">Foto</a>
+    <a href="#competencias">Competências</a>
+    <a href="#formacao">Formação</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <div class="esquerda">
+      <div id="contato">
+        <div class="section-title">
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" class="icon">Contato
+        </div>
+        <div class="info-item">aluno@email.com</div>
+        <div class="info-item">(00) 00000-0000</div>
+        <div class="info-item">Rua João Naves, 123<br>Uberlândia, MG<br>00000-000</div>
+        <div class="info-item" style="margin-top: 15px;">
+          <a href="contato.html" style="color:white;">Clique aqui para entrar em contato</a>
+        </div>
+      </div>
+
+      <div id="formacao">
+        <div class="section-title">
+          <img src="https://cdn-icons-png.flaticon.com/512/1048/1048943.png" class="icon">Formação Acadêmica
+        </div>
+        <div class="info-item">
+          <b><a href="https://ufu.br" target="_blank" style="color: white;">Curso de Tecnologia</a></b><br>
+          <a href="https://ufu.br" target="_blank" style="color: white;">Universidade Federal de Uberlândia</a><br>
+          Janeiro 2023 - Dezembro 2025<br>
+          Status: Cursando
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">
+          <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" class="icon">Idiomas
+        </div>
+        <div class="info-item">Português: Língua materna</div>
+        <div class="info-item">Inglês: Intermediário</div>
+        <div class="info-item">Espanhol: Básico</div>
+      </div>
+    </div>
+
+    <div class="direita">
+      <div style="display: flex; align-items: center;" id="foto">
+        <div style="flex: 1;">
+          <h1>João da Silva</h1>
+        </div>
+        <img src="https://img.freepik.com/fotos-gratis/bela-foto-de-um-rosto-de-guaxinim-bonito_181624-59123.jpg?ga=GA1.1.1230934060.1750206505&w=740"
+             alt="Foto currículo"
+             style="width: 80px; height: 80px; border-radius: 50%;">
+      </div>
+
+      <h3 id="competencias">
+        <img src="https://cdn-icons-png.flaticon.com/512/152/152534.png" class="icon">Habilidades e Competências
+      </h3>
+      <ul>
+        <li>Agilidade</li>
+        <li>Resolução de problemas</li>
+        <li>Atenção a detalhes</li>
+        <li>Gestão de tempo</li>
+        <li>Trabalho em equipe</li>
+        <li>Programação</li>
+        <li>Flexibilidade para aprender e lidar com novas tecnologias</li>
+        <li>Proatividade e dinamismo</li>
+      </ul>
+      <hr>
+
+      <h3 id="experiencia">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="icon">Histórico Profissional
+      </h3>
+
+      <h4>Outubro 2023 - Atual</h4>
+      <p><b><a href="https://www.microsoft.com/pt-br/" target="_blank">Microsoft</a> - Analista de Automação</b>, Home Office</p>
+      <ul>
+        <li>Desenvolvimento de automações e melhorias de processos com ferramentas variadas.</li>
+        <li>Participação em equipes ágeis.</li>
+        <li>Gestão de fluxos de trabalho digitais.</li>
+      </ul>
+
+      <h4>Outubro 2021 - Outubro 2023</h4>
+      <p><b><a href="https://about.google/" target="_blank">Google</a> - Estagiário de Automação</b>, Home Office</p>
+      <ul>
+        <li>Criação de soluções automatizadas utilizando linguagens de programação e ferramentas low-code.</li>
+      </ul>
+
+      <p>
+        <a href="experiencia.html" style="color:#2c3e50;">Veja as experiências profissionais em detalhes</a>
+      </p>
+
+      <hr>
+
+      <h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/3476/3476503.png" class="icon">Certificações
+      </h3>
+      <ul>
+        <li>Curso de Automação de Processos - Organização X (2020)</li>
+        <li>Minicurso de Python - Instituição Y (2019)</li>
+        <li>Oficina de Excel - Instituição Z (2018)</li>
+      </ul>
+
+      <h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="icon">Informações Adicionais
+      </h3>
+      <ul>
+        <li>Perfil no LinkedIn: <a href="#" target="_blank">linkedin.com/in/exemplo</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
